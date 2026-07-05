@@ -31,5 +31,7 @@ app.get("/health", (c) => c.json({ ok: true }));
 
 export default {
   fetch: app.fetch,
+  // SSE streams heartbeat every 25s; Bun's default 10s idleTimeout kills them
+  idleTimeout: 60,
   port: env.PORT,
 };

@@ -16,16 +16,16 @@ const glyphOpSchema = z.object({
   font: z.string(),
   s: z.number().min(0.25).max(4),
   t: z.literal("glyph"),
-  x: z.number().int().min(0).max(255),
-  y: z.number().int().min(0).max(191),
+  x: z.number().int().min(0).max(227),
+  y: z.number().int().min(0).max(78),
 });
 
 const stampOpSchema = z.object({
   id: z.string().min(1).max(64),
   s: z.number().min(0.25).max(4),
   t: z.literal("stamp"),
-  x: z.number().int().min(0).max(255),
-  y: z.number().int().min(0).max(191),
+  x: z.number().int().min(0).max(227),
+  y: z.number().int().min(0).max(78),
 });
 
 const opSchema = z.discriminatedUnion("t", [
@@ -37,11 +37,11 @@ const opSchema = z.discriminatedUnion("t", [
 export const pictoCardSchema = z
   .object({
     bg: z.string(),
-    h: z.literal(192),
+    h: z.literal(79),
     ops: z.array(opSchema).max(512),
     palette: z.array(z.string().regex(hexColorRegex)).max(4),
     v: z.literal(1),
-    w: z.literal(256),
+    w: z.literal(228),
   })
   .superRefine((card, ctx) => {
     let totalPoints = 0;
@@ -54,7 +54,7 @@ export const pictoCardSchema = z
             continue;
           }
           const [x, y] = firstPoint;
-          if (x < 0 || x > 255 || y < 0 || y > 191) {
+          if (x < 0 || x > 227 || y < 0 || y > 78) {
             ctx.addIssue({
               code: "custom",
               message:

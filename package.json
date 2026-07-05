@@ -20,7 +20,8 @@
     "sprites:split": "bun run tools/sprites/split.ts",
     "sprites:extract": "bun run tools/sprites/extract.ts",
     "sprites:svg": "bun run tools/sprites/generate-svg.ts",
-    "sprites:export": "bun run tools/sprites/export-theme.ts"
+    "sprites:export": "bun run tools/sprites/export-theme.ts",
+    "sprites:css": "bun run tools/sprites/generate-css.ts"
   },
   "dependencies": {
     "@hono/zod-validator": "^0.8.0",

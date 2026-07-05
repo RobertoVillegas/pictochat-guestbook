@@ -2,18 +2,18 @@
   "author_name": "Fixture",
   "card": {
     "v": 1,
-    "w": 256,
-    "h": 192,
+    "w": 228,
+    "h": 79,
     "bg": "blank",
-    "palette": ["#000000", "#ffffff"],
+    "palette": ["#1a1a1e", "#fbfbfb"],
     "ops": [
       {
         "t": "stroke",
         "tool": "pen",
-        "size": 2,
+        "size": 1,
         "color": 0,
         "p": [
-          [30, 80],
+          [30, 40],
           [1, 0],
           [1, 1],
           [2, 0]

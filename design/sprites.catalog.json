@@ -3,17 +3,8 @@
   "generatedBy": "scan v1 (--gap=2, 61 segments)",
   "updated": "2026-07-05 (Rob visual review pass)",
   "legend": {
-    "category": [
-      "sprite",
-      "group",
-      "noise"
-    ],
-    "status": [
-      "ready",
-      "needs-split",
-      "ignore",
-      "verify"
-    ]
+    "category": ["sprite", "group", "noise"],
+    "status": ["ready", "needs-split", "ignore", "verify"]
   },
   "segments": [
     {

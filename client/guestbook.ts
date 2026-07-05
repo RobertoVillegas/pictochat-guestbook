@@ -1,3 +1,5 @@
+const AUTHOR_STORAGE_KEY = "picto-author-name";
+
 interface FeedEntry {
   id: string;
   author_name: string | null;
@@ -26,10 +28,16 @@ const escapeHtml = (value: string): string =>
 const mediaUrl = (previewPath: string): string =>
   `/media/${previewPath.replace(previewsPrefixRegex, "")}`;
 
+const displayName = (authorName: string | null): string =>
+  authorName ? escapeHtml(authorName) : "Anonymous";
+
 const renderFeedCard = (entry: FeedEntry): string =>
-  `<article class="feed-card" data-id="${entry.id}">
-  <img src="${mediaUrl(entry.preview_path)}" alt="${entry.author_name ?? "entry"}" width="${entry.preview_width}" height="${entry.preview_height}" />
-  <p>${entry.author_name ? escapeHtml(entry.author_name) : "Anonymous"}</p>
+  `<article class="picto-message-card" data-id="${entry.id}">
+  <div class="picto-nametag">
+    <img src="/picto-ds/sprites/nametag-pill.png" alt="" width="64" height="22" />
+    <span class="picto-nametag-text">${displayName(entry.author_name)}</span>
+  </div>
+  <img class="picto-message-preview" src="${mediaUrl(entry.preview_path)}" alt="${entry.author_name ?? "entry"}" width="${entry.preview_width}" height="${entry.preview_height}" />
 </article>`;
 
 const prependFeedCard = (entry: FeedEntry): void => {
@@ -70,12 +78,24 @@ const connectStream = (surfaceSlug: string): void => {
     `/api/surfaces/${encodeURIComponent(surfaceSlug)}/stream`
   );
 
+  // events published while the stream was down are lost; re-sync on reconnect
+  let dropped = false;
+  source.addEventListener("error", () => {
+    dropped = true;
+  });
+  source.addEventListener("open", () => {
+    if (dropped) {
+      dropped = false;
+      void loadFeed(surfaceSlug);
+    }
+  });
+
   source.addEventListener("entry", (event) => {
     const entry = JSON.parse(event.data) as StreamEntry;
     prependFeedCard({
       ...entry,
-      preview_height: 192,
-      preview_width: 256,
+      preview_height: 79,
+      preview_width: 228,
     });
   });
 
@@ -87,17 +107,33 @@ const connectStream = (surfaceSlug: string): void => {
 
 const root = document.querySelector<HTMLElement>(".guestbook");
 const surfaceSlug = root?.dataset.surface;
+
+const authorInput = document.querySelector(
+  "#author-name"
+) as HTMLInputElement | null;
+
+if (authorInput) {
+  const savedName = localStorage.getItem(AUTHOR_STORAGE_KEY);
+  if (savedName) {
+    authorInput.value = savedName;
+  }
+  authorInput.addEventListener("change", () => {
+    const trimmed = authorInput.value.trim();
+    if (trimmed) {
+      localStorage.setItem(AUTHOR_STORAGE_KEY, trimmed);
+    } else {
+      localStorage.removeItem(AUTHOR_STORAGE_KEY);
+    }
+  });
+}
+
 if (surfaceSlug) {
   void loadFeed(surfaceSlug);
   connectStream(surfaceSlug);
 }
 
-const submitButton = document.querySelector("#submit-entry");
-submitButton?.addEventListener("click", async () => {
+const submitEntry = async (): Promise<void> => {
   const status = document.querySelector("#submit-status");
-  const authorInput = document.querySelector(
-    "#author-name"
-  ) as HTMLInputElement | null;
   const editor = window.pictoEditor;
 
   if (!surfaceSlug || !editor) {
@@ -107,8 +143,13 @@ submitButton?.addEventListener("click", async () => {
     return;
   }
 
+  const authorName = authorInput?.value.trim() || undefined;
+  if (authorName) {
+    localStorage.setItem(AUTHOR_STORAGE_KEY, authorName);
+  }
+
   const payload = {
-    author_name: authorInput?.value.trim() || undefined,
+    author_name: authorName,
     card: editor.buildPictoCard(),
     preview: editor.buildPreviewDataUrl(),
   };
@@ -133,5 +174,10 @@ submitButton?.addEventListener("click", async () => {
       body.status === "approved"
         ? "Entry published."
         : "Entry submitted (pending moderation).";
+    editor.resetEditor();
   }
+};
+
+document.querySelector("#submit-entry")?.addEventListener("click", () => {
+  void submitEntry();
 });
