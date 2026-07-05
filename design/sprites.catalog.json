@@ -127,7 +127,8 @@
       "category": "group",
       "type": "frame",
       "status": "needs-split",
-      "split": "4x4 grid of corner-bracket selection frames, one per UI color"
+      "split": "4x4 grid of corner-bracket selection frames, one per UI color",
+      "splitGap": 0
     },
     {
       "id": "seg-019",
@@ -165,7 +166,11 @@
       "category": "group",
       "type": "tab",
       "status": "needs-split",
-      "split": "vertical stack of 4 room tabs (A-D), state variant 1 of 3"
+      "split": "vertical stack of 4 room tabs (A-D), state variant 1 of 3",
+      "grid": {
+        "cols": 1,
+        "rows": 4
+      }
     },
     {
       "id": "seg-024",
@@ -173,7 +178,11 @@
       "category": "group",
       "type": "tab",
       "status": "needs-split",
-      "split": "vertical stack of 4 room tabs (A-D), state variant 2 of 3"
+      "split": "vertical stack of 4 room tabs (A-D), state variant 2 of 3",
+      "grid": {
+        "cols": 1,
+        "rows": 4
+      }
     },
     {
       "id": "seg-025",
@@ -181,7 +190,11 @@
       "category": "group",
       "type": "tab",
       "status": "needs-split",
-      "split": "vertical stack of 4 room tabs (A-D), state variant 3 of 3"
+      "split": "vertical stack of 4 room tabs (A-D), state variant 3 of 3",
+      "grid": {
+        "cols": 1,
+        "rows": 4
+      }
     },
     {
       "id": "seg-026",
@@ -234,7 +247,8 @@
       "category": "group",
       "type": "toolbar",
       "status": "needs-split",
-      "split": "36x192 vertical strip left of touch screen; contains tool icons and scroll edges"
+      "split": "36x192 vertical strip left of touch screen; contains tool icons and scroll edges",
+      "splitGap": 0
     },
     {
       "id": "seg-033",
@@ -316,7 +330,8 @@
       "category": "group",
       "type": "key",
       "status": "needs-split",
-      "split": "CAPS + A key pair repeated in every UI color (~16 rows); source for key recoloring palette map"
+      "split": "CAPS + A key pair repeated in every UI color (~16 rows); source for key recoloring palette map",
+      "splitGap": 0
     },
     {
       "id": "seg-044",
@@ -325,7 +340,11 @@
       "type": "icon",
       "status": "needs-split",
       "split": "5 stacked 16x16 keyboard-mode tab icons (latin, accents, kana, symbols, emoticon)",
-      "notes": "verified via crop"
+      "notes": "verified via crop",
+      "grid": {
+        "cols": 1,
+        "rows": 5
+      }
     },
     {
       "id": "seg-045",
@@ -422,7 +441,8 @@
       "category": "group",
       "type": "icon",
       "status": "needs-split",
-      "split": "menu icon set (~17 icons) in 5 state rows: normal, selected, selected-then-dragged-off, this-category-selected, other-category-selected; plus green status bar. Prime stamp source"
+      "split": "menu icon set (~17 icons) in 5 state rows: normal, selected, selected-then-dragged-off, this-category-selected, other-category-selected; plus green status bar. Prime stamp source",
+      "splitGap": 0
     },
     {
       "id": "seg-057",

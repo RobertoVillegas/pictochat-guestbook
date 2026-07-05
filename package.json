@@ -16,7 +16,8 @@
     "prepare": "bunx lefthook install",
     "check": "ultracite check",
     "fix": "ultracite fix",
-    "sprites:scan": "bun run tools/sprites/scan.ts"
+    "sprites:scan": "bun run tools/sprites/scan.ts",
+    "sprites:split": "bun run tools/sprites/split.ts"
   },
   "dependencies": {
     "@hono/zod-validator": "^0.8.0",
