@@ -1,16 +1,29 @@
 # pictochat-guestbook
 
-Guestbook visual estilo DS/PictoChat para [roberto.omg.lol](https://roberto.omg.lol). Cada entrada es una **PictoCard**: un documento canvas de strokes, glyphs y stamps guardado como JSON comprimido (fuente de verdad), con preview WebP como cache de lectura.
+A DS/PictoChat-style visual guestbook for [roberto.omg.lol](https://roberto.omg.lol). Every entry is a **PictoCard**: a canvas document of strokes, glyphs, and stamps stored as compressed JSON (the source of truth), with a WebP preview as a read cache. New entries show up in the feed in realtime.
 
-Stack: Bun · Hono · SQLite (drizzle) · better-auth · zod · Vite 8 (rolldown) · ultracite (oxc) · lefthook · Docker/Dokploy.
+Stack: Bun · Hono · SQLite (Drizzle) · better-auth · Zod · Vite 8 (Rolldown) · Ultracite (oxc) · Lefthook · Docker.
+
+## Quick start
 
 ```bash
 bun install
-cp .env.example .env   # y llena los valores
+cp .env.example .env   # fill in the values
 bun run db:migrate && bun run seed
 bun run build && bun run dev
 ```
 
-Los visitantes son anónimos (nickname editable); la moderación es manual: toda entrada nace `pending` y solo lo aprobado aparece en el feed.
+Or with Docker:
 
-Los sprites de referencia del DS no se redistribuyen en este repo.
+```bash
+docker compose up --build
+```
+
+## How it works
+
+- Visitors are anonymous; they can pick and change a nickname anytime (stored locally, sent as `author_name` per entry).
+- Entries are published immediately by default (`MODERATION_MODE=auto`). Set `MODERATION_MODE=manual` to hold new entries for approval instead.
+- The admin can hide or delete anything at any time. Admin auth is handled by better-auth; the single admin account is seeded from `ADMIN_EMAIL`/`ADMIN_PASSWORD`.
+- The feed updates live via server-sent events.
+
+The original DS sprite assets used as visual reference are not redistributed in this repository.
