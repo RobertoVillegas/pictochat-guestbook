@@ -39,6 +39,10 @@ body {
 .ds-shell img {
   image-rendering: pixelated;
   display: block;
+  /* sprites are chrome, never drag/select targets — pointer must reach the canvas */
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 .screen {
@@ -85,15 +89,12 @@ body {
   position: absolute;
   top: -1px;
   left: -1px;
-  clip-path: inset(
-    0 18px 50px 0
-  ); /* show just the first pill from the pills sheet */
 }
 
 #message-preview {
   position: absolute;
   left: 2px;
-  top: 20px;
+  top: 22px;
 }
 
 /* Bottom screen: composer chrome is a full 256x192 native sheet */
