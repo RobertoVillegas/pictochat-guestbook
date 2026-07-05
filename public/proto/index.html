@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PictoChat UI prototype</title>
+    <link rel="stylesheet" href="./proto.css" />
+  </head>
+  <body>
+    <main class="stage">
+      <div class="ds-frame">
+        <div class="ds-shell">
+          <section class="screen screen-top">
+            <img
+              class="screen-bg"
+              src="../picto-ds/sprites/screen-touch-striped-bg.png"
+              alt=""
+            />
+            <img
+              class="pictochat-logo"
+              src="../picto-ds/sprites/bar-pictochat-logo.png"
+              alt="PictoChat"
+            />
+            <img
+              class="entering-banner"
+              src="../picto-ds/sprites/banner-now-entering.png"
+              alt="Now entering"
+            />
+            <div class="message-card">
+              <img
+                class="nametag"
+                src="../picto-ds/sprites/nametag-pills.png"
+                alt=""
+              />
+              <canvas id="message-preview" width="228" height="60"></canvas>
+            </div>
+          </section>
+          <section class="screen screen-bottom">
+            <img
+              class="screen-bg"
+              src="../picto-ds/sprites/composer-chrome-default.png"
+              alt=""
+            />
+            <canvas id="draw" width="228" height="79"></canvas>
+            <img
+              class="keyboard"
+              src="../picto-ds/sprites/kbd-latin-main.png"
+              alt="keyboard"
+            />
+          </section>
+        </div>
+      </div>
+      <aside class="controls">
+        <h1>PictoChat proto</h1>
+        <button id="tool-pen" class="active" type="button">Pen</button>
+        <button id="tool-eraser" type="button">Eraser</button>
+        <button id="clear" type="button">Clear</button>
+        <button id="send" type="button">Send ↑</button>
+        <p class="hint">
+          Draw on the lined panel of the bottom screen. Send copies the drawing
+          to the top screen card.
+        </p>
+      </aside>
+    </main>
+    <script src="./proto.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,146 @@
+:root {
+  --scale: 2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #2b2b33;
+  font-family: monospace;
+}
+
+.stage {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+/* DS shell: composed at native 256x384, scaled up crisp */
+.ds-frame {
+  width: calc(256px * var(--scale));
+  height: calc(384px * var(--scale));
+}
+
+.ds-shell {
+  width: 256px;
+  height: 384px;
+  transform: scale(var(--scale));
+  transform-origin: top left;
+  image-rendering: pixelated;
+}
+
+.ds-shell img {
+  image-rendering: pixelated;
+  display: block;
+}
+
+.screen {
+  position: relative;
+  width: 256px;
+  height: 192px;
+  overflow: hidden;
+  background: #f8f8f8;
+}
+
+.screen-top {
+  border-bottom: 4px solid #1a1a1e;
+}
+
+.screen-bg {
+  position: absolute;
+  inset: 0;
+}
+
+.pictochat-logo {
+  position: absolute;
+  top: 8px;
+  left: 11px;
+}
+
+.entering-banner {
+  position: absolute;
+  top: 38px;
+  left: 9px;
+}
+
+.message-card {
+  position: absolute;
+  top: 96px;
+  left: 11px;
+  width: 234px;
+  height: 84px;
+  background: #fbfbfb;
+  border: 1px solid #494949;
+  border-radius: 4px;
+}
+
+.message-card .nametag {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  clip-path: inset(
+    0 18px 50px 0
+  ); /* show just the first pill from the pills sheet */
+}
+
+#message-preview {
+  position: absolute;
+  left: 2px;
+  top: 20px;
+}
+
+/* Bottom screen: composer chrome is a full 256x192 native sheet */
+#draw {
+  position: absolute;
+  left: 24px;
+  top: 18px;
+  cursor: crosshair;
+  touch-action: none;
+}
+
+.keyboard {
+  position: absolute;
+  left: 22px;
+  top: 104px;
+}
+
+/* prototype controls (outside the DS) */
+.controls {
+  color: #e8e8ee;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 180px;
+}
+
+.controls h1 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.controls button {
+  font: inherit;
+  padding: 6px 10px;
+  background: #3a3a44;
+  color: inherit;
+  border: 1px solid #55555f;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.controls button.active {
+  background: #fb0071;
+  border-color: #fb0071;
+}
+
+.hint {
+  font-size: 11px;
+  color: #9a9aa4;
+}

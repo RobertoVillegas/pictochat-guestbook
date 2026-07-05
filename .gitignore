@@ -19,3 +19,6 @@ public/app/
 
 # Sprite scan pipeline output (derived from gitignored source PNG)
 design/generated/
+
+# Theme sprites exported from the reference rip (private theme, PRD §14)
+public/picto-ds/
