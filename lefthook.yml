@@ -3,4 +3,7 @@ pre-commit:
     - name: format+lint
       run: bunx ultracite fix {staged_files}
       glob: "*.{ts,tsx,js,json,css,html}"
+      exclude:
+        - design/**
+        - drizzle/**
       stage_fixed: true

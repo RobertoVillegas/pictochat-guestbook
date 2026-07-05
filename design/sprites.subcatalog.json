@@ -1,0 +1,502 @@
+{
+  "source": "ds-pictochat-sprites.png",
+  "generatedBy": "split v2 (--gap=1 + grid/splitGap overrides)",
+  "updated": "2026-07-05",
+  "note": "naming pass 1 of N: seg-056 (icons), seg-023/024/025 (room tabs), seg-044 (kbd modes). Remaining parents pending.",
+  "subsegments": [
+    {
+      "id": "seg-056a",
+      "parentId": "seg-056",
+      "name": "statusbar-signal",
+      "type": "statusbar",
+      "status": "verify",
+      "notes": "status bar + green signal swatch merged; may need one more split"
+    },
+    {
+      "id": "seg-056b",
+      "parentId": "seg-056",
+      "name": "icon-console-dark",
+      "type": "icon",
+      "status": "verify"
+    },
+    {
+      "id": "seg-056c",
+      "parentId": "seg-056",
+      "name": "icon-wrench-normal",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056d",
+      "parentId": "seg-056",
+      "name": "icon-clock-panel-normal",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056e",
+      "parentId": "seg-056",
+      "name": "icon-user-normal",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056f",
+      "parentId": "seg-056",
+      "name": "icon-target-normal",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056g",
+      "parentId": "seg-056",
+      "name": "icon-door-normal",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056h",
+      "parentId": "seg-056",
+      "name": "icon-globe-normal",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056i",
+      "parentId": "seg-056",
+      "name": "icon-cartridge-normal",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056j",
+      "parentId": "seg-056",
+      "name": "icon-calendar-normal",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056k",
+      "parentId": "seg-056",
+      "name": "icon-alarm-normal",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056l",
+      "parentId": "seg-056",
+      "name": "icon-clock-normal",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056m",
+      "parentId": "seg-056",
+      "name": "icon-pen-line-normal",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056n",
+      "parentId": "seg-056",
+      "name": "icon-beacon-normal",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056o",
+      "parentId": "seg-056",
+      "name": "icon-dots-grid-normal",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056p",
+      "parentId": "seg-056",
+      "name": "icon-bubble-stand-normal",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056q",
+      "parentId": "seg-056",
+      "name": "icon-wrench-selected",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056r",
+      "parentId": "seg-056",
+      "name": "icon-clock-panel-selected",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056s",
+      "parentId": "seg-056",
+      "name": "icon-user-selected",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056t",
+      "parentId": "seg-056",
+      "name": "icon-target-selected",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056u",
+      "parentId": "seg-056",
+      "name": "icon-door-selected",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056v",
+      "parentId": "seg-056",
+      "name": "icon-globe-selected",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056w",
+      "parentId": "seg-056",
+      "name": "icon-cartridge-selected",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056x",
+      "parentId": "seg-056",
+      "name": "icon-calendar-selected",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056y",
+      "parentId": "seg-056",
+      "name": "icon-alarm-selected",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056z",
+      "parentId": "seg-056",
+      "name": "icon-clock-selected",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056aa",
+      "parentId": "seg-056",
+      "name": "icon-pen-line-selected",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056ab",
+      "parentId": "seg-056",
+      "name": "icon-beacon-selected",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056ac",
+      "parentId": "seg-056",
+      "name": "icon-dots-grid-selected",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056ad",
+      "parentId": "seg-056",
+      "name": "icon-bubble-stand-selected",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056ae",
+      "parentId": "seg-056",
+      "name": "icon-wrench-dragged-off",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056af",
+      "parentId": "seg-056",
+      "name": "icon-clock-panel-dragged-off",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056ag",
+      "parentId": "seg-056",
+      "name": "icon-user-dragged-off",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056ah",
+      "parentId": "seg-056",
+      "name": "icon-target-dragged-off",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056ai",
+      "parentId": "seg-056",
+      "name": "icon-door-dragged-off",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056aj",
+      "parentId": "seg-056",
+      "name": "icon-globe-dragged-off",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056ak",
+      "parentId": "seg-056",
+      "name": "icon-cartridge-dragged-off",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056al",
+      "parentId": "seg-056",
+      "name": "icon-calendar-dragged-off",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056am",
+      "parentId": "seg-056",
+      "name": "icon-alarm-dragged-off",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056an",
+      "parentId": "seg-056",
+      "name": "icon-clock-dragged-off",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056ao",
+      "parentId": "seg-056",
+      "name": "icon-pen-line-dragged-off",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056ap",
+      "parentId": "seg-056",
+      "name": "icon-beacon-dragged-off",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056aq",
+      "parentId": "seg-056",
+      "name": "icon-dots-grid-dragged-off",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056ar",
+      "parentId": "seg-056",
+      "name": "icon-bubble-stand-dragged-off",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056as",
+      "parentId": "seg-056",
+      "name": "icon-wrench-category-active",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056at",
+      "parentId": "seg-056",
+      "name": "icon-clock-panel-category-active",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056au",
+      "parentId": "seg-056",
+      "name": "icon-user-category-active",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056av",
+      "parentId": "seg-056",
+      "name": "icon-wrench-category-inactive",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056aw",
+      "parentId": "seg-056",
+      "name": "icon-clock-panel-category-inactive",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056ax",
+      "parentId": "seg-056",
+      "name": "icon-user-category-inactive",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-056ay",
+      "parentId": "seg-056",
+      "name": "icon-target-category-inactive",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-023a",
+      "parentId": "seg-023",
+      "name": "tab-room-a-v1",
+      "type": "tab",
+      "status": "verify",
+      "notes": "state semantics (default/selected/outline) pinned at extraction"
+    },
+    {
+      "id": "seg-023b",
+      "parentId": "seg-023",
+      "name": "tab-room-b-v1",
+      "type": "tab",
+      "status": "verify",
+      "notes": "state semantics (default/selected/outline) pinned at extraction"
+    },
+    {
+      "id": "seg-023c",
+      "parentId": "seg-023",
+      "name": "tab-room-c-v1",
+      "type": "tab",
+      "status": "verify",
+      "notes": "state semantics (default/selected/outline) pinned at extraction"
+    },
+    {
+      "id": "seg-023d",
+      "parentId": "seg-023",
+      "name": "tab-room-d-v1",
+      "type": "tab",
+      "status": "verify",
+      "notes": "state semantics (default/selected/outline) pinned at extraction"
+    },
+    {
+      "id": "seg-024a",
+      "parentId": "seg-024",
+      "name": "tab-room-a-v2",
+      "type": "tab",
+      "status": "verify",
+      "notes": "state semantics (default/selected/outline) pinned at extraction"
+    },
+    {
+      "id": "seg-024b",
+      "parentId": "seg-024",
+      "name": "tab-room-b-v2",
+      "type": "tab",
+      "status": "verify",
+      "notes": "state semantics (default/selected/outline) pinned at extraction"
+    },
+    {
+      "id": "seg-024c",
+      "parentId": "seg-024",
+      "name": "tab-room-c-v2",
+      "type": "tab",
+      "status": "verify",
+      "notes": "state semantics (default/selected/outline) pinned at extraction"
+    },
+    {
+      "id": "seg-024d",
+      "parentId": "seg-024",
+      "name": "tab-room-d-v2",
+      "type": "tab",
+      "status": "verify",
+      "notes": "state semantics (default/selected/outline) pinned at extraction"
+    },
+    {
+      "id": "seg-025a",
+      "parentId": "seg-025",
+      "name": "tab-room-a-v3",
+      "type": "tab",
+      "status": "verify",
+      "notes": "state semantics (default/selected/outline) pinned at extraction"
+    },
+    {
+      "id": "seg-025b",
+      "parentId": "seg-025",
+      "name": "tab-room-b-v3",
+      "type": "tab",
+      "status": "verify",
+      "notes": "state semantics (default/selected/outline) pinned at extraction"
+    },
+    {
+      "id": "seg-025c",
+      "parentId": "seg-025",
+      "name": "tab-room-c-v3",
+      "type": "tab",
+      "status": "verify",
+      "notes": "state semantics (default/selected/outline) pinned at extraction"
+    },
+    {
+      "id": "seg-025d",
+      "parentId": "seg-025",
+      "name": "tab-room-d-v3",
+      "type": "tab",
+      "status": "verify",
+      "notes": "state semantics (default/selected/outline) pinned at extraction"
+    },
+    {
+      "id": "seg-044a",
+      "parentId": "seg-044",
+      "name": "icon-kbd-mode-latin",
+      "type": "icon",
+      "status": "verify",
+      "notes": "mode order assumed top-to-bottom; confirm on crop"
+    },
+    {
+      "id": "seg-044b",
+      "parentId": "seg-044",
+      "name": "icon-kbd-mode-accents",
+      "type": "icon",
+      "status": "verify",
+      "notes": "mode order assumed top-to-bottom; confirm on crop"
+    },
+    {
+      "id": "seg-044c",
+      "parentId": "seg-044",
+      "name": "icon-kbd-mode-kana",
+      "type": "icon",
+      "status": "verify",
+      "notes": "mode order assumed top-to-bottom; confirm on crop"
+    },
+    {
+      "id": "seg-044d",
+      "parentId": "seg-044",
+      "name": "icon-kbd-mode-symbols",
+      "type": "icon",
+      "status": "verify",
+      "notes": "mode order assumed top-to-bottom; confirm on crop"
+    },
+    {
+      "id": "seg-044e",
+      "parentId": "seg-044",
+      "name": "icon-kbd-mode-emoji",
+      "type": "icon",
+      "status": "verify",
+      "notes": "mode order assumed top-to-bottom; confirm on crop"
+    }
+  ]
+}
