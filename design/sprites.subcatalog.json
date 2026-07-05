@@ -2,7 +2,7 @@
   "source": "ds-pictochat-sprites.png",
   "generatedBy": "split v2 (--gap=1 + grid/splitGap overrides)",
   "updated": "2026-07-05",
-  "note": "naming pass 1 of N: seg-056 (icons), seg-023/024/025 (room tabs), seg-044 (kbd modes). Remaining parents pending.",
+  "note": "naming passes: seg-056 icons, room tabs, kbd modes, seg-042 composer. Remaining parents pending.",
   "subsegments": [
     {
       "id": "seg-056a",
@@ -497,6 +497,59 @@
       "type": "icon",
       "status": "verify",
       "notes": "mode order assumed top-to-bottom; confirm on crop"
+    },
+    {
+      "id": "seg-042a",
+      "parentId": "seg-042",
+      "name": "bar-pictochat-logo",
+      "type": "panel",
+      "status": "ready",
+      "notes": "PICTOCHAT logo lockup bar (top screen header)"
+    },
+    {
+      "id": "seg-042b",
+      "parentId": "seg-042",
+      "name": "banner-now-entering",
+      "type": "panel",
+      "status": "needs-split",
+      "notes": "black 'Now entering' banner + outline variant stacked; one more cut"
+    },
+    {
+      "id": "seg-042c",
+      "parentId": "seg-042",
+      "name": "noise-marker-cyan",
+      "type": "noise",
+      "status": "ignore"
+    },
+    {
+      "id": "seg-042d",
+      "parentId": "seg-042",
+      "name": "noise-marker-yellow",
+      "type": "noise",
+      "status": "ignore"
+    },
+    {
+      "id": "seg-042e",
+      "parentId": "seg-042",
+      "name": "composer-chrome-active",
+      "type": "mixed",
+      "status": "needs-split",
+      "notes": "composer pieces in active/recolored (pink) state: card frames, SEND/receive/copy buttons, close X. Recolor pair of seg-042f — proves UI-palette theming mechanism"
+    },
+    {
+      "id": "seg-042f",
+      "parentId": "seg-042",
+      "name": "composer-chrome-default",
+      "type": "mixed",
+      "status": "needs-split",
+      "notes": "full composer default state: tool sidebar (scroll, pen, eraser, sizes, kbd modes), lined DRAWING BASE panel (ruled stripes, recolors with UI palette), white message panel, SEND/down/copy buttons, close X. THE core Fase 3 component"
+    },
+    {
+      "id": "seg-042g",
+      "parentId": "seg-042",
+      "name": "button-copy-small",
+      "type": "button",
+      "status": "verify"
     }
   ]
 }

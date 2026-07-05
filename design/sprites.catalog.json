@@ -341,7 +341,8 @@
       "type": "mixed",
       "status": "needs-split",
       "split": "PictoChat bottom-screen decomposition: message list panels, text input frame, SEND buttons (2 states), side toolbar icons, scroll arrows, copy buttons",
-      "notes": "PictoChat composer decomposition INCLUDING the drawing canvas area; Rob's review"
+      "notes": "PictoChat composer decomposition. Child a: top-screen bars (PICTOCHAT logo lockup + 'Now entering' banner, filled + outline variants). Child c: full composer — tool sidebar, the lined drawing base panel (horizontal ruled stripes; recolors with the PictoChat UI palette per Rob + seg-043/047 evidence), SEND buttons in 2 states, scroll/copy buttons. Reference screenshot: assets/source/pictochat-ui-reference.png",
+      "splitGap": 0
     },
     {
       "id": "seg-043",
