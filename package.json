@@ -17,7 +17,8 @@
     "check": "ultracite check",
     "fix": "ultracite fix",
     "sprites:scan": "bun run tools/sprites/scan.ts",
-    "sprites:split": "bun run tools/sprites/split.ts"
+    "sprites:split": "bun run tools/sprites/split.ts",
+    "sprites:export": "bun run tools/sprites/export-theme.ts"
   },
   "dependencies": {
     "@hono/zod-validator": "^0.8.0",

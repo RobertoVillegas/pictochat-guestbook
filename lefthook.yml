@@ -1,7 +1,7 @@
 pre-commit:
   jobs:
     - name: format+lint
-      run: bunx ultracite fix {staged_files}
+      run: tools/lint-staged.sh {staged_files}
       glob: "*.{ts,tsx,js,json,css,html}"
       exclude:
         - design/**
