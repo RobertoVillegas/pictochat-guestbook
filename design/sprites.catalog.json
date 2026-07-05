@@ -1,0 +1,458 @@
+{
+  "source": "ds-pictochat-sprites.png",
+  "generatedBy": "scan v1 (--gap=2, 61 segments)",
+  "updated": "2026-07-05",
+  "legend": {
+    "category": ["sprite", "group", "noise"],
+    "status": ["ready", "needs-split", "ignore", "verify"]
+  },
+  "segments": [
+    {
+      "id": "seg-001",
+      "name": "noise-ds-logo-mark",
+      "category": "noise",
+      "status": "ignore",
+      "notes": "rounded-square glyph of the Nintendo DS wordmark"
+    },
+    {
+      "id": "seg-002",
+      "name": "noise-ds-wordmark",
+      "category": "noise",
+      "status": "ignore"
+    },
+    {
+      "id": "seg-003",
+      "name": "noise-kobold-canvas-logo",
+      "category": "noise",
+      "status": "ignore",
+      "notes": "ripper's banner art"
+    },
+    {
+      "id": "seg-004",
+      "name": "screens-health-safety",
+      "category": "group",
+      "type": "screen",
+      "status": "ignore",
+      "notes": "6 H&S warning screens in 6 languages; real BIOS panels but out of scope for picto-ds"
+    },
+    {
+      "id": "seg-005",
+      "name": "noise-ripper-credit",
+      "category": "noise",
+      "status": "ignore"
+    },
+    {
+      "id": "seg-006",
+      "name": "noise-tumblr-credit-1",
+      "category": "noise",
+      "status": "ignore"
+    },
+    {
+      "id": "seg-007",
+      "name": "noise-tumblr-credit-2",
+      "category": "noise",
+      "status": "ignore"
+    },
+    {
+      "id": "seg-008",
+      "name": "noise-label-text-palette",
+      "category": "noise",
+      "status": "ignore"
+    },
+    {
+      "id": "seg-009",
+      "name": "palette-text-strip",
+      "category": "sprite",
+      "type": "palette",
+      "status": "ready",
+      "notes": "tiny 4-swatch text palette"
+    },
+    {
+      "id": "seg-010",
+      "name": "group-system-menu-composite",
+      "category": "group",
+      "type": "mixed",
+      "status": "needs-split",
+      "split": "contains: interface palette column, clock panel, calendar grid, two large menu grid screens, pink top/bottom bars, 3 DS Download Play buttons, 2 PICTOCHAT logo lockups, GBA/DS-card slot labels",
+      "notes": "largest composite; split by alpha at gap=1 within region, then hand-name"
+    },
+    {
+      "id": "seg-011",
+      "name": "noise-label-interface",
+      "category": "noise",
+      "status": "ignore"
+    },
+    {
+      "id": "seg-012",
+      "name": "noise-label-palette",
+      "category": "noise",
+      "status": "ignore"
+    },
+    {
+      "id": "seg-013",
+      "name": "noise-label-clock",
+      "category": "noise",
+      "status": "ignore"
+    },
+    {
+      "id": "seg-014",
+      "name": "palette-swatch-grid-small",
+      "category": "sprite",
+      "type": "palette",
+      "status": "ready"
+    },
+    {
+      "id": "seg-015",
+      "name": "noise-label-calendar",
+      "category": "noise",
+      "status": "ignore"
+    },
+    {
+      "id": "seg-016",
+      "name": "palette-interface-grid",
+      "category": "sprite",
+      "type": "palette",
+      "status": "ready",
+      "notes": "pastel interface palette grid"
+    },
+    {
+      "id": "seg-017",
+      "name": "noise-label-ui-selection",
+      "category": "noise",
+      "status": "ignore"
+    },
+    {
+      "id": "seg-018",
+      "name": "frame-corner-brackets",
+      "category": "group",
+      "type": "frame",
+      "status": "needs-split",
+      "split": "4x4 grid of corner-bracket selection frames, one per UI color"
+    },
+    {
+      "id": "seg-019",
+      "name": "panel-gba-slot-dark",
+      "category": "sprite",
+      "type": "panel",
+      "status": "ready",
+      "notes": "black panel with orange border (GBA slot screen)"
+    },
+    {
+      "id": "seg-020",
+      "name": "noise-label-pictochat",
+      "category": "noise",
+      "status": "ignore"
+    },
+    {
+      "id": "seg-021",
+      "name": "group-menu-screens",
+      "category": "group",
+      "type": "screen",
+      "status": "needs-split",
+      "split": "menu grid screens + pink header/footer bars + brightness/alarm setting rows"
+    },
+    {
+      "id": "seg-022",
+      "name": "dialog-color-picker",
+      "category": "sprite",
+      "type": "dialog",
+      "status": "ready",
+      "notes": "window with header and magenta swatch"
+    },
+    {
+      "id": "seg-023",
+      "name": "tabs-room-column-a",
+      "category": "group",
+      "type": "tab",
+      "status": "needs-split",
+      "split": "vertical stack of 4 room tabs (A-D), state variant 1 of 3"
+    },
+    {
+      "id": "seg-024",
+      "name": "tabs-room-column-b",
+      "category": "group",
+      "type": "tab",
+      "status": "needs-split",
+      "split": "vertical stack of 4 room tabs (A-D), state variant 2 of 3"
+    },
+    {
+      "id": "seg-025",
+      "name": "tabs-room-column-c",
+      "category": "group",
+      "type": "tab",
+      "status": "needs-split",
+      "split": "vertical stack of 4 room tabs (A-D), state variant 3 of 3"
+    },
+    {
+      "id": "seg-026",
+      "name": "nametag-bar-a",
+      "category": "sprite",
+      "type": "nametag",
+      "status": "ready",
+      "notes": "160x32 nametag bar with person icon, variant 1 of 3 (states TBD at extraction)"
+    },
+    {
+      "id": "seg-027",
+      "name": "frame-selection-dashed",
+      "category": "sprite",
+      "type": "frame",
+      "status": "ready",
+      "notes": "low-density dashed multicolor selection frame"
+    },
+    {
+      "id": "seg-028",
+      "name": "panel-mini-window",
+      "category": "sprite",
+      "type": "panel",
+      "status": "ready"
+    },
+    {
+      "id": "seg-029",
+      "name": "nametag-bar-b",
+      "category": "sprite",
+      "type": "nametag",
+      "status": "ready"
+    },
+    {
+      "id": "seg-030",
+      "name": "nametag-bar-c",
+      "category": "sprite",
+      "type": "nametag",
+      "status": "ready"
+    },
+    {
+      "id": "seg-031",
+      "name": "panel-download-play-entry",
+      "category": "group",
+      "type": "panel",
+      "status": "needs-split",
+      "split": "entry panel with input + person button, plus user-slot dot icons and black user tiles below"
+    },
+    {
+      "id": "seg-032",
+      "name": "sidebar-tool-strip",
+      "category": "group",
+      "type": "toolbar",
+      "status": "needs-split",
+      "split": "36x192 vertical strip left of touch screen; contains tool icons and scroll edges"
+    },
+    {
+      "id": "seg-033",
+      "name": "screen-touch-striped-bg",
+      "category": "sprite",
+      "type": "screen",
+      "status": "ready",
+      "notes": "256x192 striped touch-screen background — exact DS resolution"
+    },
+    {
+      "id": "seg-034",
+      "name": "noise-label-date-time",
+      "category": "noise",
+      "status": "ignore"
+    },
+    {
+      "id": "seg-035",
+      "name": "group-console-art-and-bars",
+      "category": "group",
+      "type": "mixed",
+      "status": "needs-split",
+      "split": "DS console illustration (noise) + GAME BOY logo (noise) + pink gradient bars (keep) + connector lines (noise)"
+    },
+    {
+      "id": "seg-036",
+      "name": "noise-label-keyboard",
+      "category": "noise",
+      "status": "ignore"
+    },
+    {
+      "id": "seg-037",
+      "name": "group-keyboard-dark-composite",
+      "category": "group",
+      "type": "keyboard",
+      "status": "needs-split",
+      "split": "dark symbol keyboard rows + orange key + pink/white entry bars + mini palette + white QWERTY keyboard with ENTER keys"
+    },
+    {
+      "id": "seg-038",
+      "name": "key-outline-drag",
+      "category": "sprite",
+      "type": "key",
+      "status": "ready",
+      "notes": "key outline states from the ripper's drag demo; useful for is-dragging style"
+    },
+    {
+      "id": "seg-039",
+      "name": "noise-annotation-stylus-drag",
+      "category": "noise",
+      "status": "ignore",
+      "notes": "3-line teal annotation about key drag behavior"
+    },
+    {
+      "id": "seg-040",
+      "name": "noise-label-white-a",
+      "category": "noise",
+      "status": "ignore",
+      "notes": "white text label (verified: illegible white-on-transparent, ripper annotation)"
+    },
+    {
+      "id": "seg-041",
+      "name": "kbd-latin-basic",
+      "category": "group",
+      "type": "keyboard",
+      "status": "needs-split",
+      "split": "numbers row + QWERTY letters + shift/caps/space; split into individual keys for the bitmap font"
+    },
+    {
+      "id": "seg-042",
+      "name": "group-pictochat-ui-composite",
+      "category": "group",
+      "type": "mixed",
+      "status": "needs-split",
+      "split": "PictoChat bottom-screen decomposition: message list panels, text input frame, SEND buttons (2 states), side toolbar icons, scroll arrows, copy buttons"
+    },
+    {
+      "id": "seg-043",
+      "name": "keys-caps-a-color-column",
+      "category": "group",
+      "type": "key",
+      "status": "needs-split",
+      "split": "CAPS + A key pair repeated in every UI color (~16 rows); source for key recoloring palette map"
+    },
+    {
+      "id": "seg-044",
+      "name": "icons-kbd-mode-column",
+      "category": "group",
+      "type": "icon",
+      "status": "needs-split",
+      "split": "5 stacked 16x16 keyboard-mode tab icons (latin, accents, kana, symbols, emoticon)",
+      "notes": "verified via crop"
+    },
+    {
+      "id": "seg-045",
+      "name": "kbd-layout-a",
+      "category": "group",
+      "type": "keyboard",
+      "status": "needs-split",
+      "split": "200x81 full layout; identify (accents lower/upper, symbols, kana) at split time"
+    },
+    {
+      "id": "seg-046",
+      "name": "letters-acbd-boxes",
+      "category": "group",
+      "type": "icon",
+      "status": "needs-split",
+      "split": "A/C/B/D boxed letters, blue + yellow variants (room letter icons)"
+    },
+    {
+      "id": "seg-047",
+      "name": "group-pictochat-ui-palette",
+      "category": "group",
+      "type": "palette",
+      "status": "needs-split",
+      "split": "vertical rainbow UI palette strip + text palette swatches; strip out embedded green annotation labels (noise)"
+    },
+    {
+      "id": "seg-048",
+      "name": "nametags-pictochat-pills",
+      "category": "group",
+      "type": "nametag",
+      "status": "needs-split",
+      "split": "2 pink nametag pill shapes + corner size marker; strip embedded 'Pictochat Nametag' label (noise)",
+      "notes": "verified via crop"
+    },
+    {
+      "id": "seg-049",
+      "name": "kbd-layout-b",
+      "category": "group",
+      "type": "keyboard",
+      "status": "needs-split",
+      "split": "200x81 full layout; identify at split time"
+    },
+    {
+      "id": "seg-050",
+      "name": "kbd-layout-c",
+      "category": "group",
+      "type": "keyboard",
+      "status": "needs-split",
+      "split": "200x81 full layout; identify at split time"
+    },
+    {
+      "id": "seg-051",
+      "name": "kbd-symbols-large",
+      "category": "group",
+      "type": "keyboard",
+      "status": "needs-split",
+      "split": "227x147 extended symbols layout"
+    },
+    {
+      "id": "seg-052",
+      "name": "nametag-maxlength-demo",
+      "category": "group",
+      "type": "nametag",
+      "status": "needs-split",
+      "split": "pink nametag pill at max length + marker; strip embedded 'Max nametag length' label (noise)",
+      "notes": "verified via crop"
+    },
+    {
+      "id": "seg-053",
+      "name": "kbd-layout-d",
+      "category": "group",
+      "type": "keyboard",
+      "status": "needs-split",
+      "split": "200x81 full layout; identify at split time"
+    },
+    {
+      "id": "seg-054",
+      "name": "kbd-layout-e",
+      "category": "group",
+      "type": "keyboard",
+      "status": "needs-split",
+      "split": "200x81 full layout; identify at split time"
+    },
+    {
+      "id": "seg-055",
+      "name": "noise-label-white-b",
+      "category": "noise",
+      "status": "ignore",
+      "notes": "white text label (verified: illegible white-on-transparent, ripper annotation)"
+    },
+    {
+      "id": "seg-056",
+      "name": "group-icon-state-rows",
+      "category": "group",
+      "type": "icon",
+      "status": "needs-split",
+      "split": "menu icon set (~17 icons) in 5 state rows: normal, selected, selected-then-dragged-off, this-category-selected, other-category-selected; plus green status bar. Prime stamp source"
+    },
+    {
+      "id": "seg-057",
+      "name": "noise-label-normal",
+      "category": "noise",
+      "status": "ignore"
+    },
+    {
+      "id": "seg-058",
+      "name": "noise-label-selected",
+      "category": "noise",
+      "status": "ignore"
+    },
+    {
+      "id": "seg-059",
+      "name": "noise-label-selected-dragged",
+      "category": "noise",
+      "status": "ignore"
+    },
+    {
+      "id": "seg-060",
+      "name": "noise-label-this-category",
+      "category": "noise",
+      "status": "ignore"
+    },
+    {
+      "id": "seg-061",
+      "name": "noise-label-other-category",
+      "category": "noise",
+      "status": "ignore"
+    }
+  ]
+}

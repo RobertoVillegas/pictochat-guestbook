@@ -15,7 +15,8 @@
     "format": "bunx ultracite fix",
     "prepare": "bunx lefthook install",
     "check": "ultracite check",
-    "fix": "ultracite fix"
+    "fix": "ultracite fix",
+    "sprites:scan": "bun run tools/sprites/scan.ts"
   },
   "dependencies": {
     "@hono/zod-validator": "^0.8.0",
@@ -31,6 +32,7 @@
     "lefthook": "^2.1.9",
     "oxfmt": "^0.57.0",
     "oxlint": "^1.72.0",
+    "sharp": "^0.35.3",
     "typescript": "^6.0.3",
     "ultracite": "7.8.4",
     "vite": "^8.1.3"
