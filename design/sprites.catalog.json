@@ -1,10 +1,19 @@
 {
   "source": "ds-pictochat-sprites.png",
   "generatedBy": "scan v1 (--gap=2, 61 segments)",
-  "updated": "2026-07-05",
+  "updated": "2026-07-05 (Rob visual review pass)",
   "legend": {
-    "category": ["sprite", "group", "noise"],
-    "status": ["ready", "needs-split", "ignore", "verify"]
+    "category": [
+      "sprite",
+      "group",
+      "noise"
+    ],
+    "status": [
+      "ready",
+      "needs-split",
+      "ignore",
+      "verify"
+    ]
   },
   "segments": [
     {
@@ -110,10 +119,12 @@
     {
       "id": "seg-016",
       "name": "palette-interface-grid",
-      "category": "sprite",
+      "category": "group",
       "type": "palette",
-      "status": "ready",
-      "notes": "pastel interface palette grid"
+      "status": "needs-split",
+      "notes": "was palette-interface-grid; contains several sprites per Rob",
+      "split": "multiple elements inside (Rob's review); re-segment at gap=0 and re-catalog",
+      "splitGap": 0
     },
     {
       "id": "seg-017",
@@ -206,11 +217,16 @@
     },
     {
       "id": "seg-027",
-      "name": "frame-selection-dashed",
-      "category": "sprite",
+      "name": "frames-dashed-set",
+      "category": "group",
       "type": "frame",
-      "status": "ready",
-      "notes": "low-density dashed multicolor selection frame"
+      "status": "needs-split",
+      "notes": "was frame-selection-dashed (single); contains several per Rob",
+      "split": "3x3 grid of 33x33 dashed selection frames, one color variant each (incl. rainbow)",
+      "grid": {
+        "cols": 3,
+        "rows": 3
+      }
     },
     {
       "id": "seg-028",
@@ -239,7 +255,8 @@
       "category": "group",
       "type": "panel",
       "status": "needs-split",
-      "split": "entry panel with input + person button, plus user-slot dot icons and black user tiles below"
+      "split": "entry panel with input + person button, plus user-slot dot icons and black user tiles below",
+      "notes": "contains the input-field elements (ds.css input counterpart) + user slots; Rob's review"
     },
     {
       "id": "seg-032",
@@ -284,7 +301,8 @@
       "category": "group",
       "type": "keyboard",
       "status": "needs-split",
-      "split": "dark symbol keyboard rows + orange key + pink/white entry bars + mini palette + white QWERTY keyboard with ENTER keys"
+      "split": "dark symbol keyboard rows + orange key + pink/white entry bars + mini palette + white QWERTY keyboard with ENTER keys",
+      "notes": "keyboard, keys, input bars and other elements (ds.css inputs counterpart); Rob's review"
     },
     {
       "id": "seg-038",
@@ -322,7 +340,8 @@
       "category": "group",
       "type": "mixed",
       "status": "needs-split",
-      "split": "PictoChat bottom-screen decomposition: message list panels, text input frame, SEND buttons (2 states), side toolbar icons, scroll arrows, copy buttons"
+      "split": "PictoChat bottom-screen decomposition: message list panels, text input frame, SEND buttons (2 states), side toolbar icons, scroll arrows, copy buttons",
+      "notes": "PictoChat composer decomposition INCLUDING the drawing canvas area; Rob's review"
     },
     {
       "id": "seg-043",
@@ -331,7 +350,8 @@
       "type": "key",
       "status": "needs-split",
       "split": "CAPS + A key pair repeated in every UI color (~16 rows); source for key recoloring palette map",
-      "splitGap": 0
+      "splitGap": 0,
+      "notes": "several things inside besides CAPS+A color rows; Rob's review"
     },
     {
       "id": "seg-044",
@@ -348,11 +368,12 @@
     },
     {
       "id": "seg-045",
-      "name": "kbd-layout-a",
+      "name": "kbd-latin-main",
       "category": "group",
       "type": "keyboard",
       "status": "needs-split",
-      "split": "200x81 full layout; identify (accents lower/upper, symbols, kana) at split time"
+      "split": "main PictoChat keyboard layout; split into keys via keymap in Phase 4",
+      "notes": "THE default keyboard; Rob's review"
     },
     {
       "id": "seg-046",
@@ -364,11 +385,12 @@
     },
     {
       "id": "seg-047",
-      "name": "group-pictochat-ui-palette",
+      "name": "group-kbd-palette-chrome",
       "category": "group",
       "type": "palette",
       "status": "needs-split",
-      "split": "vertical rainbow UI palette strip + text palette swatches; strip out embedded green annotation labels (noise)"
+      "split": "keyboard chrome pieces that recolor when the PictoChat UI palette changes + palette strips; strip embedded labels",
+      "notes": "pairs with seg-043 (CAPS+A color rows) to derive the full recolor map; Rob's review"
     },
     {
       "id": "seg-048",
@@ -381,19 +403,21 @@
     },
     {
       "id": "seg-049",
-      "name": "kbd-layout-b",
+      "name": "kbd-accents",
       "category": "group",
       "type": "keyboard",
       "status": "needs-split",
-      "split": "200x81 full layout; identify at split time"
+      "split": "vowel keys with accent/tilde variants; keymap in Phase 4",
+      "notes": "Rob's review"
     },
     {
       "id": "seg-050",
-      "name": "kbd-layout-c",
+      "name": "kbd-special-chars",
       "category": "group",
       "type": "keyboard",
       "status": "needs-split",
-      "split": "200x81 full layout; identify at split time"
+      "split": "special character keys; keymap in Phase 4",
+      "notes": "Rob's review"
     },
     {
       "id": "seg-051",
@@ -414,19 +438,21 @@
     },
     {
       "id": "seg-053",
-      "name": "kbd-layout-d",
+      "name": "kbd-kana",
       "category": "group",
       "type": "keyboard",
       "status": "needs-split",
-      "split": "200x81 full layout; identify at split time"
+      "split": "Japanese kana layout; keymap in Phase 4",
+      "notes": "Rob's review"
     },
     {
       "id": "seg-054",
-      "name": "kbd-layout-e",
+      "name": "kbd-symbols-ds",
       "category": "group",
       "type": "keyboard",
       "status": "needs-split",
-      "split": "200x81 full layout; identify at split time"
+      "split": "DS-specific symbol keys (system glyphs); keymap in Phase 4",
+      "notes": "Rob's review"
     },
     {
       "id": "seg-055",
@@ -442,7 +468,8 @@
       "type": "icon",
       "status": "needs-split",
       "split": "menu icon set (~17 icons) in 5 state rows: normal, selected, selected-then-dragged-off, this-category-selected, other-category-selected; plus green status bar. Prime stamp source",
-      "splitGap": 0
+      "splitGap": 0,
+      "notes": "DS menu icon set; confirmed by Rob"
     },
     {
       "id": "seg-057",
