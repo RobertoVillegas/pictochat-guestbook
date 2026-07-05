@@ -1,0 +1,6 @@
+pre-commit:
+  jobs:
+    - name: format+lint
+      run: bunx ultracite fix {staged_files}
+      glob: "*.{ts,tsx,js,json,css,html}"
+      stage_fixed: true

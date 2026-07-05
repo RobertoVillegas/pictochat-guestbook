@@ -1,0 +1,25 @@
+{
+  "author_name": "Fixture",
+  "card": {
+    "v": 1,
+    "w": 256,
+    "h": 192,
+    "bg": "blank",
+    "palette": ["#000000", "#ffffff"],
+    "ops": [
+      {
+        "t": "stroke",
+        "tool": "pen",
+        "size": 2,
+        "color": 0,
+        "p": [
+          [30, 80],
+          [1, 0],
+          [1, 1],
+          [2, 0]
+        ]
+      }
+    ]
+  },
+  "preview": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg=="
+}
