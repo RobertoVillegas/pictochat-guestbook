@@ -2,7 +2,7 @@
   "source": "ds-pictochat-sprites.png",
   "generatedBy": "split v2 (--gap=1 + grid/splitGap overrides)",
   "updated": "2026-07-05",
-  "note": "naming passes: seg-056 icons, room tabs, kbd modes, seg-042 composer. Remaining parents pending.",
+  "note": "naming passes: seg-056 icons, tabs, kbd modes, composer (042), UI swatches (016), download-play (031), kbd palette chrome (047). Pending: 010, 018, 021, 032, 035, 037, 041, 043, 046, 048, 051, 052.",
   "subsegments": [
     {
       "id": "seg-056a",
@@ -550,6 +550,312 @@
       "name": "button-copy-small",
       "type": "button",
       "status": "verify"
+    },
+    {
+      "id": "seg-016f",
+      "parentId": "seg-016",
+      "name": "swatch-ui-01",
+      "type": "palette",
+      "status": "ready",
+      "notes": "UI color swatch with dashed selection border; definitive color name comes from matrix palette"
+    },
+    {
+      "id": "seg-016g",
+      "parentId": "seg-016",
+      "name": "swatch-ui-02",
+      "type": "palette",
+      "status": "ready",
+      "notes": "UI color swatch with dashed selection border; definitive color name comes from matrix palette"
+    },
+    {
+      "id": "seg-016h",
+      "parentId": "seg-016",
+      "name": "swatch-ui-03",
+      "type": "palette",
+      "status": "ready",
+      "notes": "UI color swatch with dashed selection border; definitive color name comes from matrix palette"
+    },
+    {
+      "id": "seg-016a",
+      "parentId": "seg-016",
+      "name": "chip-text-01",
+      "type": "palette",
+      "status": "ready",
+      "notes": "small text-palette chip"
+    },
+    {
+      "id": "seg-016b",
+      "parentId": "seg-016",
+      "name": "chip-text-02",
+      "type": "palette",
+      "status": "ready",
+      "notes": "small text-palette chip"
+    },
+    {
+      "id": "seg-016c",
+      "parentId": "seg-016",
+      "name": "chip-text-03",
+      "type": "palette",
+      "status": "ready",
+      "notes": "small text-palette chip"
+    },
+    {
+      "id": "seg-016i",
+      "parentId": "seg-016",
+      "name": "swatch-ui-04",
+      "type": "palette",
+      "status": "ready",
+      "notes": "UI color swatch with dashed selection border; definitive color name comes from matrix palette"
+    },
+    {
+      "id": "seg-016d",
+      "parentId": "seg-016",
+      "name": "chip-text-04",
+      "type": "palette",
+      "status": "ready",
+      "notes": "small text-palette chip"
+    },
+    {
+      "id": "seg-016e",
+      "parentId": "seg-016",
+      "name": "chip-text-05",
+      "type": "palette",
+      "status": "ready",
+      "notes": "small text-palette chip"
+    },
+    {
+      "id": "seg-016j",
+      "parentId": "seg-016",
+      "name": "swatch-ui-05",
+      "type": "palette",
+      "status": "ready",
+      "notes": "UI color swatch with dashed selection border; definitive color name comes from matrix palette"
+    },
+    {
+      "id": "seg-016k",
+      "parentId": "seg-016",
+      "name": "swatch-ui-06",
+      "type": "palette",
+      "status": "ready",
+      "notes": "UI color swatch with dashed selection border; definitive color name comes from matrix palette"
+    },
+    {
+      "id": "seg-016l",
+      "parentId": "seg-016",
+      "name": "swatch-ui-07",
+      "type": "palette",
+      "status": "ready",
+      "notes": "UI color swatch with dashed selection border; definitive color name comes from matrix palette"
+    },
+    {
+      "id": "seg-016m",
+      "parentId": "seg-016",
+      "name": "swatch-ui-08",
+      "type": "palette",
+      "status": "ready",
+      "notes": "UI color swatch with dashed selection border; definitive color name comes from matrix palette"
+    },
+    {
+      "id": "seg-016n",
+      "parentId": "seg-016",
+      "name": "swatch-ui-09",
+      "type": "palette",
+      "status": "ready",
+      "notes": "UI color swatch with dashed selection border; definitive color name comes from matrix palette"
+    },
+    {
+      "id": "seg-016o",
+      "parentId": "seg-016",
+      "name": "swatch-ui-10",
+      "type": "palette",
+      "status": "ready",
+      "notes": "UI color swatch with dashed selection border; definitive color name comes from matrix palette"
+    },
+    {
+      "id": "seg-016p",
+      "parentId": "seg-016",
+      "name": "swatch-ui-11",
+      "type": "palette",
+      "status": "ready",
+      "notes": "UI color swatch with dashed selection border; definitive color name comes from matrix palette"
+    },
+    {
+      "id": "seg-016q",
+      "parentId": "seg-016",
+      "name": "swatch-ui-12",
+      "type": "palette",
+      "status": "ready",
+      "notes": "UI color swatch with dashed selection border; definitive color name comes from matrix palette"
+    },
+    {
+      "id": "seg-016r",
+      "parentId": "seg-016",
+      "name": "swatch-ui-13",
+      "type": "palette",
+      "status": "ready",
+      "notes": "UI color swatch with dashed selection border; definitive color name comes from matrix palette"
+    },
+    {
+      "id": "seg-016s",
+      "parentId": "seg-016",
+      "name": "swatch-ui-14",
+      "type": "palette",
+      "status": "ready",
+      "notes": "UI color swatch with dashed selection border; definitive color name comes from matrix palette"
+    },
+    {
+      "id": "seg-016t",
+      "parentId": "seg-016",
+      "name": "swatch-ui-15",
+      "type": "palette",
+      "status": "ready",
+      "notes": "UI color swatch with dashed selection border; definitive color name comes from matrix palette"
+    },
+    {
+      "id": "seg-016u",
+      "parentId": "seg-016",
+      "name": "swatch-ui-16",
+      "type": "palette",
+      "status": "ready",
+      "notes": "UI color swatch with dashed selection border; definitive color name comes from matrix palette"
+    },
+    {
+      "id": "seg-031a",
+      "parentId": "seg-031",
+      "name": "input-entry-panel",
+      "type": "panel",
+      "status": "needs-split",
+      "notes": "entry panel with input field + person button (ds.css input counterpart); strip baked 'Download Play' ripper label"
+    },
+    {
+      "id": "seg-031b",
+      "parentId": "seg-031",
+      "name": "tile-user-signal-green-a",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-031c",
+      "parentId": "seg-031",
+      "name": "tile-user-signal-green-b",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-031d",
+      "parentId": "seg-031",
+      "name": "anim-searching-frame-1",
+      "type": "icon",
+      "status": "ready",
+      "notes": "yellow dot pattern, user-search animation frame"
+    },
+    {
+      "id": "seg-031e",
+      "parentId": "seg-031",
+      "name": "anim-searching-frame-2",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-031f",
+      "parentId": "seg-031",
+      "name": "anim-searching-frame-3",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-031g",
+      "parentId": "seg-031",
+      "name": "anim-searching-frame-4",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-031h",
+      "parentId": "seg-031",
+      "name": "tile-user-signal-yellow",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-031i",
+      "parentId": "seg-031",
+      "name": "tile-user-signal-red",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-031j",
+      "parentId": "seg-031",
+      "name": "anim-searching-frame-5",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-031k",
+      "parentId": "seg-031",
+      "name": "anim-searching-frame-6",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-031l",
+      "parentId": "seg-031",
+      "name": "anim-searching-frame-7",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-031m",
+      "parentId": "seg-031",
+      "name": "anim-searching-frame-8",
+      "type": "icon",
+      "status": "ready"
+    },
+    {
+      "id": "seg-047a",
+      "parentId": "seg-047",
+      "name": "palette-ui-rainbow-strip",
+      "type": "palette",
+      "status": "ready",
+      "notes": "vertical UI-palette picker strip with selector chips; usable whole"
+    },
+    {
+      "id": "seg-047b",
+      "parentId": "seg-047",
+      "name": "sidebar-tools-active",
+      "type": "toolbar",
+      "status": "needs-split",
+      "notes": "full tool sidebar recolored pink with selection outlines; recolor pair of the gray sidebar inside seg-042f"
+    },
+    {
+      "id": "seg-047c",
+      "parentId": "seg-047",
+      "name": "noise-label-pictochat-palette",
+      "type": "noise",
+      "status": "ignore"
+    },
+    {
+      "id": "seg-047d",
+      "parentId": "seg-047",
+      "name": "noise-label-ui",
+      "type": "noise",
+      "status": "ignore"
+    },
+    {
+      "id": "seg-047e",
+      "parentId": "seg-047",
+      "name": "palette-text-chips",
+      "type": "palette",
+      "status": "ready",
+      "notes": "text palette chips + blue selector box"
+    },
+    {
+      "id": "seg-047f",
+      "parentId": "seg-047",
+      "name": "noise-label-text",
+      "type": "noise",
+      "status": "ignore"
     }
   ]
 }
