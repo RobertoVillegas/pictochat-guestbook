@@ -16,16 +16,16 @@ const glyphOpSchema = z.object({
   font: z.string(),
   s: z.number().min(0.25).max(4),
   t: z.literal("glyph"),
-  x: z.number().int().min(0).max(227),
-  y: z.number().int().min(0).max(78),
+  x: z.number().int().min(0),
+  y: z.number().int().min(0),
 });
 
 const stampOpSchema = z.object({
   id: z.string().min(1).max(64),
   s: z.number().min(0.25).max(4),
   t: z.literal("stamp"),
-  x: z.number().int().min(0).max(227),
-  y: z.number().int().min(0).max(78),
+  x: z.number().int().min(0),
+  y: z.number().int().min(0),
 });
 
 const opSchema = z.discriminatedUnion("t", [
@@ -37,15 +37,27 @@ const opSchema = z.discriminatedUnion("t", [
 export const pictoCardSchema = z
   .object({
     bg: z.string(),
-    h: z.literal(79),
+    h: z.number().int().min(64).max(512),
     ops: z.array(opSchema).max(512),
     palette: z.array(z.string().regex(hexColorRegex)).max(4),
     v: z.literal(1),
-    w: z.literal(228),
+    w: z.number().int().min(128).max(512),
   })
   .superRefine((card, ctx) => {
+    const maxX = card.w - 1;
+    const maxY = card.h - 1;
     let totalPoints = 0;
     for (const op of card.ops) {
+      if (
+        (op.t === "glyph" || op.t === "stamp") &&
+        (op.x > maxX || op.y > maxY)
+      ) {
+        ctx.addIssue({
+          code: "custom",
+          message: `${op.t} position must be within canvas bounds`,
+          path: ["ops"],
+        });
+      }
       if (op.t === "stroke") {
         totalPoints += op.p.length;
         if (op.p.length > 0) {
@@ -54,7 +66,7 @@ export const pictoCardSchema = z
             continue;
           }
           const [x, y] = firstPoint;
-          if (x < 0 || x > 227 || y < 0 || y > 78) {
+          if (x < 0 || x > maxX || y < 0 || y > maxY) {
             ctx.addIssue({
               code: "custom",
               message:

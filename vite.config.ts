@@ -11,6 +11,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         admin: path.resolve(rootDir, "client/admin.ts"),
+        demo: path.resolve(rootDir, "client/demo.ts"),
         editor: path.resolve(rootDir, "client/editor.ts"),
         guestbook: path.resolve(rootDir, "client/guestbook.ts"),
         styles: path.resolve(rootDir, "client/styles.css"),
