@@ -15,6 +15,9 @@ app.route("/api", api);
 app.route("/admin", admin);
 app.route("/", publicRoutes);
 
+// static directories with relative asset paths need the trailing slash
+app.get("/proto", (c) => c.redirect("/proto/", 301));
+
 app.use(
   "/media/*",
   serveStatic({
