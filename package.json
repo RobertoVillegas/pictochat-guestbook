@@ -18,6 +18,8 @@
     "fix": "ultracite fix",
     "sprites:scan": "bun run tools/sprites/scan.ts",
     "sprites:split": "bun run tools/sprites/split.ts",
+    "sprites:extract": "bun run tools/sprites/extract.ts",
+    "sprites:svg": "bun run tools/sprites/generate-svg.ts",
     "sprites:export": "bun run tools/sprites/export-theme.ts"
   },
   "dependencies": {
