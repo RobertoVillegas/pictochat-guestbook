@@ -1,0 +1,15 @@
+node_modules/
+data/
+.delegate/
+.env
+*.log
+.DS_Store
+
+# Sprite rip de Nintendo: solo referencia local, no se redistribuye (PRD §14)
+assets/source/
+
+# Docs internas y config de agentes: solo local, no van al repo público
+docs/
+CLAUDE.md
+AGENTS.md
+.cursor/
